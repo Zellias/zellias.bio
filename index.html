@@ -95,33 +95,12 @@
                 border: 2px solid #ff0000;
             }
         }
-        .matrix-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            opacity: 0.3;
-            pointer-events: none;
-            background-image: url('https://i.imgur.com/ko6EOKl.jpg'); /* Replace with your matrix background image */
-            animation: matrixAnimation 10s linear infinite;
-        }
-
-        @keyframes matrixAnimation {
-            0% {
-                transform: translateY(0);
-            }
-
-            100% {
-                transform: translateY(-100%);
-            }
-        }
+       
     </style>
 </head>
 
 <body >
-    <div class="matrix-bg"></div>
+   
     <audio loop autoplay>
         <source src="./music.mp3" type="audio/filetype">
     </audio>
