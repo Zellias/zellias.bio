@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <titles>Zellias.bio</title>
+    <title>Zellias.bio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <!-- Add Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -95,7 +95,21 @@
                 border: 2px solid #ff0000;
             }
         }
-    
+    @keyframes rainbow {
+  0% { border-color: red; }
+  14% { border-color: orange; }
+  28% { border-color: yellow; }
+  43% { border-color: green; }
+  57% { border-color: blue; }
+  71% { border-color: indigo; }
+  85% { border-color: violet; }
+  100% { border-color: red; }
+}
+
+/* Apply the rainbow animation to the button */
+.contact-button {
+  animation: rainbow 2s infinite;
+}
     </style>
 </head>
 
@@ -125,6 +139,9 @@
                         <li><i class="fas fa-database"></i> MongoDB</li>
                     </ul>
                 </div>
+                <button class="contact-button bg-transparent border-solid border-2 border-rainbow py-2 px-4 rounded-full text-white font-semibold">
+  Contact Us
+</button>
             </div>
         </div>
     </div>
