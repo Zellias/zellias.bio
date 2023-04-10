@@ -95,12 +95,26 @@
                 border: 2px solid #ff0000;
             }
         }
-       
+
+        /* Contact button styles */
+        .contact-button {
+            background-color: #7289DA;
+            color: #fff;
+            border-radius: 4px;
+            padding: 0.75rem 1rem;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .contact-button:hover {
+            background-color: #5a68a5;
+        }
     </style>
 </head>
 
-<body >
-   
+<body>
     <audio loop autoplay>
         <source src="./music.mp3" type="audio/filetype">
     </audio>
@@ -111,24 +125,34 @@
                     <h1 class="card-title">My Profile</h1>
                 </div>
                 <div class="card-body">
-                    <img src="avatar.jpg" alt="Profile Picture" class="profile-pic">
-                    <h2 class="text-lg font-bold mb-2">About Me</h2>
-                    <p>Hi, I'm Zellias! I'm a web developer with a passion for coding and building
-                        awesome web applications.</p>
-                    <h2 class="text-lg font-bold mt-6 mb-2">Skills</h2>
+                    <img src="avatar.jpg" alt                     ="Profile Picture" class="profile-pic">
                     <ul class="card-list">
-                        <li><i class="fab fa-html5"></i> HTML</li>
-                        <li><i class="fab fa-js"></i> JavaScript</li>
-                        <li><i class="fab fa-react"></i> React</li>
-                        <li><i class="fab fa-node-js"></i> Node.js</li>       
-                        <li><i class="fab fa-python"></i> Python</li>
-                        <li><i class="fas fa-database"></i> MongoDB</li>
+                        <li>
+                            <i class="fas fa-user"></i>
+                            <span>Name: John Doe</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: johndoe@example.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>Phone: +1 123 456 7890</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe"></i>
+                            <span>Website: www.example.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location: New York, USA</span>
+                        </li>
                     </ul>
+                    <a href="#" class="contact-button">Contact Me</a>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
 
 </html>
