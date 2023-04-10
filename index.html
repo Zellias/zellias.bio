@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My Profile</title>
+    <titles>Zellias.bio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <!-- Add Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -95,33 +95,12 @@
                 border: 2px solid #ff0000;
             }
         }
-        .matrix-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: -1;
-            opacity: 0.3;
-            pointer-events: none;
-            background-image: url('https://i.imgur.com/ko6EOKl.jpg'); /* Replace with your matrix background image */
-            animation: matrixAnimation 10s linear infinite;
-        }
-
-        @keyframes matrixAnimation {
-            0% {
-                transform: translateY(0);
-            }
-
-            100% {
-                transform: translateY(-100%);
-            }
-        }
+    
     </style>
 </head>
 
 <body >
-    <div class="matrix-bg"></div>
+  
     <audio loop autoplay>
         <source src="./music.mp3" type="audio/filetype">
     </audio>
@@ -142,8 +121,6 @@
                         <li><i class="fab fa-js"></i> JavaScript</li>
                         <li><i class="fab fa-react"></i> React</li>
                         <li><i class="fab fa-node-js"></i> Node.js</li>
-                        <li><i class="fab fa-deno"></i> Deno</li>
-                        <li><i class="fab fa-typescript"></i> TypeScript</li>
                         <li><i class="fab fa-python"></i> Python</li>
                         <li><i class="fas fa-database"></i> MongoDB</li>
                     </ul>
